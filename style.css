@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Ensure consistent sizing */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 216, 230);
+}
+
+.card {
+    width: 350px;
+    /* max-width: 90%; */
+    background-color: #fff;
+    /* Card background */
+    padding: 20px;
+    border-radius: 10px;
+    /* Smooth, rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Centers the content inside */
+}
+
+.qr_code img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    font-size: 1.5rem;
+    /* Adjusted font size for the title */
+    font-weight: 600;
+    /* Make the title bold */
+    margin: 20px 0 10px;
+    /* Add space around the title */
+    color: #333;
+    /* Neutral dark color for better readability */
+}
+
+p {
+    font-size: 1rem;
+    /* Font size for the description */
+    color: #555;
+    /* Light gray text color */
+    line-height: 1.5;
+    /* Improves readability */
+}
+
+/* Responsive Design */
+@media (max-width: 500px ) {
+    .card {
+        width: 70%;
+        
+        /* Fit card within smaller viewports */
+        padding: 10px;
+        /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* Slightly smaller title */
+    }
+
+    p {
+        font-size: 1rem;
+        /* Adjust text size for smaller screens */
+    }
+
+    .qr_code img {
+        max-width: 300px;
+        /* Reduce image size */
+    }
+}
+
